@@ -1,1 +1,13 @@
-site_name: My Docs
+site_name: Projeto Front-End
+theme:
+  name: null
+  custom_dir: 'cinder'
+  locale: pt_BR
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - python
+    - html
+    - css
+    - javascript
+repo_url: "https://github.com/jonh-carvalho/DW_24.2_8003"
