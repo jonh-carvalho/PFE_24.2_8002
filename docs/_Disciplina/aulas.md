@@ -8,7 +8,7 @@
 | __04__ - 02/09/24 | Elaboração 5w2h -[Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) e [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)                   |  |
 | __05__ - 09/09/24 | Front-End Checklist - Validação HTML, CSS, Link e [Wcag](https://www.guia-wcag.com/) <br />[Protótipos](/docs/assets/docs/Aula%20-%20Prototipagem.pdf)                                          |  |
 | __06__ - 16/09/24 | [Análise de Tarefas](../assets/aulas/Análise%20de%20Tarefas.pdf)                             |  |
-| __07__ - 23/09/24 |                                                                                                                                                   |  |
+| __07__ - 23/09/24 | GOMS                                            |  |
 | __08__ - 30/09/24 | AP1                                                                                                                                               |  |
 | __09__ - 07/10/24 |                                                                                                                                                   |  |
 | __10__ - 14/10/24 |                                                                                                                                                   |  |
