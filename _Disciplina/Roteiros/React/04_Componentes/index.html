@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+    
+    <title>04 Componentes - Projeto Front-End</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../../..">Projeto Front-End</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Disciplina <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../aulas/">Aulas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../github/">Versionamento</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../mkdocs/">MkDocs</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Roteiros</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../goms/">Goms</a>
+</li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">AHT</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../AHT/aht/">Análise Hierárquica de Tarefas (AHT)</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Protótipo</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../Prot%C3%B3tipo/prot%C3%B3tipo/">Protótipo</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">React</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../01_Intro/">01 Intro</a>
+</li>
+
+        
+            
+<li >
+    <a href="../02_NodeViteReact/">02 NodeViteReact</a>
+</li>
+
+        
+            
+<li >
+    <a href="../03_Spa/">03 Spa</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">04 Componentes</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Base <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../../base/5w2h/">5W2H</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../base/Brainstorm/">Brainstorm</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../base/doc_template/">Titulo do documento</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../base/documento_de_visao/">Documento de Visão</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../base/entrevista/">Entrevista</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../base/mapa_mental/">Mapas Mentais</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../base/metodologia/">Metodologia</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../base/prototipo_alta_fidelidade/">Protótipo</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sprint <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../../sprint/sprint1/">Sprint 1</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../03_Spa/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../../../base/5w2h/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jonh-carvalho/PFE_24.2_8002/edit/master/docs/_Disciplina/Roteiros/React/04_Componentes.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#criar-um-spa-single-page-application-utilizando-react-com-vite">Criar um SPA (Single Page Application) utilizando React com Vite</a></li>
+        <li class="first-level "><a href="#passos-para-criar-um-spa-react-com-vite">Passos para criar um SPA React com Vite:</a></li>
+        <li class="first-level "><a href="#expandindo-sua-spa">Expandindo sua SPA</a></li>
+            <li class="second-level"><a href="#1-hero-section">1. Hero Section</a></li>
+                
+            <li class="second-level"><a href="#2-features-section">2. Features Section</a></li>
+                
+            <li class="second-level"><a href="#3-testimonial-section">3. Testimonial Section</a></li>
+                
+            <li class="second-level"><a href="#como-combinar-esses-componentes">Como combinar esses componentes:</a></li>
+                
+            <li class="second-level"><a href="#estilos-css">Estilos (CSS)</a></li>
+                
+            <li class="second-level"><a href="#diferenca-entre-pages-e-components">Diferença entre Pages e Components</a></li>
+                
+            <li class="second-level"><a href="#organizacao-de-pages-e-components">Organização de Pages e Components</a></li>
+                
+                <li class="third-level"><a href="#estrutura-de-diretorio-recomendada">Estrutura de diretório recomendada:</a></li>
+                <li class="third-level"><a href="#exemplo-de-uso-pratico">Exemplo de uso prático</a></li>
+            <li class="second-level"><a href="#resumo-da-organizacao">Resumo da Organização:</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h3 id="criar-um-spa-single-page-application-utilizando-react-com-vite">Criar um SPA (Single Page Application) utilizando <strong>React</strong> com <strong>Vite</strong></h3>
+<h3 id="passos-para-criar-um-spa-react-com-vite">Passos para criar um SPA React com Vite:</h3>
+<p>1. <strong>Instalar o Vite</strong>:
+   Vite é uma ferramenta de construção que facilita a criação de apps modernos com uma performance excelente. Para começar, abra seu terminal e execute o seguinte comando:</p>
+<pre><code class="language-bash">   npm create vite@latest my-spa-app
+</code></pre>
+<p>O Vite irá te guiar na configuração inicial do projeto. Escolha as seguintes opções:</p>
+<ul>
+<li><code>Project name</code>: <strong>my-spa-app</strong> (ou o nome que preferir)</li>
+<li><code>Select a framework</code>: <strong>React</strong></li>
+<li><code>Select a variant</code>: <strong>JavaScript</strong> ou <strong>TypeScript</strong>, dependendo de sua preferência.</li>
+</ul>
+<p>2. <strong>Instalar as dependências</strong>:
+   Após criar o projeto, vá para a pasta do projeto e instale as dependências:</p>
+<pre><code>   cd my-spa-app
+
+   npm install
+</code></pre>
+<p>3. <strong>Estrutura de pastas</strong>:
+   Ao concluir, a estrutura do projeto será algo como:</p>
+<pre><code>public
+
+src
+
+    assets
+
+    App.jsx
+
+    main.jsx
+
+    index.css
+
+    index.html
+
+vite.config.js
+</code></pre>
+<p>4. <strong>Iniciar o servidor de desenvolvimento</strong>:</p>
+<p>Agora você pode iniciar o servidor de desenvolvimento e ver o app rodando:</p>
+<pre><code>   npm run dev
+</code></pre>
+<p>5. <strong>Criando Componentes de Rotas (React Router)</strong>:
+   Para um SPA, é comum utilizar o <strong>React Router</strong> para navegação. Instale-o:</p>
+<pre><code class="language-bash">   npm install react-router-dom
+</code></pre>
+<p>Em seguida, configure as rotas no arquivo <code>App.jsx</code>:</p>
+<pre><code class="language-js">
+   import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+   import Home from './components/Home';
+   import About from './components/About';
+
+   function App() {
+     return (
+       &lt;Router&gt;
+         &lt;Routes&gt;
+           &lt;Route path=&quot;/&quot; element={&lt;Home /&gt;} /&gt;
+           &lt;Route path=&quot;/about&quot; element={&lt;About /&gt;} /&gt;
+         &lt;/Routes&gt;
+       &lt;/Router&gt;
+     );
+   }
+
+   export default App;
+</code></pre>
+<p>6. <strong>Criar Páginas (Componentes)</strong>:
+   Crie os componentes para as páginas:</p>
+<ul>
+<li><code>src/components/Home.jsx</code>:</li>
+</ul>
+<pre><code class="language-jsx">  function Home() {
+    return &lt;h1&gt;Welcome to Home Page&lt;/h1&gt;;
+  }
+
+  export default Home;
+</code></pre>
+<ul>
+<li><code>src/components/About.jsx</code>:</li>
+</ul>
+<pre><code class="language-jsx">  function About() {
+    return &lt;h1&gt;About Us&lt;/h1&gt;;
+  }
+
+  export default About;
+</code></pre>
+<p>7. <strong>Estilos (CSS)</strong>:
+   Para adicionar estilos, você pode usar o arquivo <code>index.css</code> ou criar estilos específicos para cada componente.</p>
+<p>8. <strong>Build do projeto</strong>:
+   Quando quiser fazer o build do projeto para produção, basta rodar:</p>
+<pre><code class="language-bash">   npm run build
+</code></pre>
+<hr />
+<h2 id="expandindo-sua-spa">Expandindo sua SPA</h2>
+<p>Para criar uma <strong>landing page</strong> com React, você pode estruturar a aplicação com diversos componentes reutilizáveis. Vou sugerir três componentes típicos que você pode incluir em uma landing page e fornecer o código para cada um:</p>
+<h3 id="1-hero-section">1. <strong>Hero Section</strong></h3>
+<p>Esse componente é o primeiro que o usuário vê, geralmente inclui uma mensagem de boas-vindas, uma breve descrição e um call-to-action (CTA).</p>
+<pre><code class="language-js">
+// src/components/Hero.jsx
+function Hero() {
+  return (
+    &lt;section className=&quot;hero&quot;&gt;
+      &lt;div className=&quot;container&quot;&gt;
+        &lt;h1&gt;Welcome to Our Product&lt;/h1&gt;
+        &lt;p&gt;Discover the best solution for your needs with our cutting-edge product.&lt;/p&gt;
+        &lt;a href=&quot;#signup&quot; className=&quot;cta-button&quot;&gt;Get Started&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  );
+}
+
+export default Hero;
+</code></pre>
+<h3 id="2-features-section">2. <strong>Features Section</strong></h3>
+<p>Este componente destaca os principais recursos ou benefícios do produto/serviço oferecido pela landing page.</p>
+<pre><code class="language-js">
+// src/components/Features.jsx
+function Features() {
+  return (
+    &lt;section className=&quot;features&quot;&gt;
+      &lt;div className=&quot;container&quot;&gt;
+        &lt;h2&gt;Main Features&lt;/h2&gt;
+        &lt;div className=&quot;feature-list&quot;&gt;
+          &lt;div className=&quot;feature&quot;&gt;
+            &lt;h3&gt;Feature One&lt;/h3&gt;
+            &lt;p&gt;Explanation of the first feature and its benefits.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;feature&quot;&gt;
+            &lt;h3&gt;Feature Two&lt;/h3&gt;
+            &lt;p&gt;Explanation of the second feature and its benefits.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;feature&quot;&gt;
+            &lt;h3&gt;Feature Three&lt;/h3&gt;
+            &lt;p&gt;Explanation of the third feature and its benefits.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  );
+}
+
+export default Features;
+</code></pre>
+<h3 id="3-testimonial-section">3. <strong>Testimonial Section</strong></h3>
+<p>Um componente de depoimentos para mostrar feedback de usuários satisfeitos.</p>
+<pre><code class="language-js">
+// src/components/Testimonials.jsx
+function Testimonials() {
+  return (
+    &lt;section className=&quot;testimonials&quot;&gt;
+      &lt;div className=&quot;container&quot;&gt;
+        &lt;h2&gt;What Our Customers Say&lt;/h2&gt;
+        &lt;div className=&quot;testimonial-list&quot;&gt;
+          &lt;div className=&quot;testimonial&quot;&gt;
+            &lt;p&gt;&quot;This product changed my life! Highly recommended.&quot;&lt;/p&gt;
+            &lt;span&gt;- John Doe&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;testimonial&quot;&gt;
+            &lt;p&gt;&quot;A game-changer in the industry, I'm beyond impressed.&quot;&lt;/p&gt;
+            &lt;span&gt;- Jane Smith&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;testimonial&quot;&gt;
+            &lt;p&gt;&quot;Excellent customer service and fantastic results.&quot;&lt;/p&gt;
+            &lt;span&gt;- Michael Lee&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  );
+}
+
+export default Testimonials;
+</code></pre>
+<h3 id="como-combinar-esses-componentes">Como combinar esses componentes:</h3>
+<p>Agora você pode combinar esses componentes dentro do arquivo principal <code>App.jsx</code>:</p>
+<pre><code class="language-js">
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Testimonials from './components/Testimonials';
+
+function App() {
+  return (
+    &lt;&gt;
+      &lt;Hero /&gt;
+      &lt;Features /&gt;
+      &lt;Testimonials /&gt;
+    &lt;/&gt;
+  );
+}
+
+export default App;
+</code></pre>
+<h3 id="estilos-css">Estilos (CSS)</h3>
+<p>Para estilizar os componentes, adicione CSS no arquivo <code>index.css</code> ou crie arquivos CSS específicos para cada componente.</p>
+<pre><code class="language-css">/* index.css */
+.hero {
+  background-color: #f0f8ff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonials {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+</code></pre>
+<p>Com esses três componentes — <strong>Hero</strong>, <strong>Features</strong>, e <strong>Testimonials</strong> — você pode criar uma landing page atrativa e funcional para destacar seu produto ou serviço.</p>
+<hr />
+<p>A organização de uma aplicação <strong>React</strong> pode ser melhorada ao diferenciar <strong>Pages</strong> (páginas) de <strong>Components</strong> (componentes). A distinção entre essas duas categorias é importante para manter o código escalável, reutilizável e de fácil manutenção. Vou explicar a diferença e como você pode organizá-los de forma eficiente.</p>
+<h3 id="diferenca-entre-pages-e-components">Diferença entre <strong>Pages</strong> e <strong>Components</strong></h3>
+<ol>
+<li>
+<p><strong>Pages (Páginas)</strong>:</p>
+</li>
+<li>
+<p><strong>O que são</strong>: São componentes que representam rotas individuais da aplicação, geralmente associadas a uma URL específica. Cada <strong>Page</strong> é uma "página" completa e geralmente agrupa vários componentes.</p>
+</li>
+<li><strong>Função</strong>: Uma page contém a estrutura e layout principal da página e usa outros componentes para construir sua interface. É responsável por representar uma tela completa da aplicação.</li>
+<li><strong>Exemplo</strong>: HomePage, AboutPage, ContactPage, DashboardPage, etc.</li>
+<li>
+<p><strong>Components (Componentes)</strong>:</p>
+</li>
+<li>
+<p><strong>O que são</strong>: São blocos reutilizáveis menores de interface, que podem ser usados em várias páginas. Componentes são mais modulares e têm uma única responsabilidade, como um botão, um formulário, ou uma tabela.</p>
+</li>
+<li><strong>Função</strong>: Eles não estão vinculados a uma URL específica e podem ser combinados dentro de <strong>Pages</strong> ou outros componentes.</li>
+<li><strong>Exemplo</strong>: Navbar, Footer, Button, Card, Modal, FormField, etc.</li>
+</ol>
+<h3 id="organizacao-de-pages-e-components">Organização de <strong>Pages</strong> e <strong>Components</strong></h3>
+<p>Uma boa prática é criar pastas separadas para <strong>Pages</strong> e <strong>Components</strong> no diretório <code>src</code>. Isso ajuda a organizar o código e deixar claro o propósito de cada arquivo.</p>
+<h4 id="estrutura-de-diretorio-recomendada">Estrutura de diretório recomendada:</h4>
+<pre><code class="language-bash">src/
+│
+├── components/
+│   ├── Button.jsx
+│   ├── Card.jsx
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+│
+├── pages/
+│   ├── HomePage.jsx
+│   ├── AboutPage.jsx
+│   ├── ContactPage.jsx
+│   └── DashboardPage.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+</code></pre>
+<h4 id="exemplo-de-uso-pratico">Exemplo de uso prático</h4>
+<h5 id="homepagejsx-pagina"><strong>HomePage.jsx</strong> (Página)</h5>
+<pre><code class="language-jsx">import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Features from '../components/Features';
+import Hero from '../components/Hero';
+
+function HomePage() {
+  return (
+    &lt;&gt;
+      &lt;Navbar /&gt;
+      &lt;Hero /&gt;
+      &lt;Features /&gt;
+      &lt;Footer /&gt;
+    &lt;/&gt;
+  );
+}
+
+export default HomePage;
+</code></pre>
+<p>Aqui, a página <strong>HomePage</strong> serve como a estrutura principal da página de "Home", e ela reutiliza componentes como <strong>Navbar</strong>, <strong>Hero</strong>, <strong>Features</strong> e <strong>Footer</strong>. Cada componente pode ser reutilizado em outras páginas, mantendo o código modular.</p>
+<h5 id="navbarjsx-componente"><strong>Navbar.jsx</strong> (Componente)</h5>
+<pre><code class="language-jsx">function Navbar() {
+  return (
+    &lt;nav&gt;
+      &lt;h1&gt;Logo&lt;/h1&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;/about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  );
+}
+
+export default Navbar;
+</code></pre>
+<p>O <strong>Navbar</strong> é um componente que pode ser utilizado em várias páginas, como <strong>HomePage</strong>, <strong>AboutPage</strong> e <strong>ContactPage</strong>. Ele contém a lógica e a estrutura do menu de navegação.</p>
+<h5 id="aboutpagejsx-pagina"><strong>AboutPage.jsx</strong> (Página)</h5>
+<pre><code class="language-jsx">import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
+function AboutPage() {
+  return (
+    &lt;&gt;
+      &lt;Navbar /&gt;
+      &lt;section className=&quot;about&quot;&gt;
+        &lt;h1&gt;About Us&lt;/h1&gt;
+        &lt;p&gt;We are a company that values...&lt;/p&gt;
+      &lt;/section&gt;
+      &lt;Footer /&gt;
+    &lt;/&gt;
+  );
+}
+
+export default AboutPage;
+</code></pre>
+<p>Aqui, a <strong>AboutPage</strong> também reutiliza os mesmos componentes de <strong>Navbar</strong> e <strong>Footer</strong>, mas tem um conteúdo único no corpo da página, como a seção "About Us".</p>
+<h3 id="resumo-da-organizacao">Resumo da Organização:</h3>
+<ul>
+<li><strong>Páginas</strong> (<strong>Pages</strong>) representam <strong>rotas</strong> e normalmente combinam vários <strong>componentes</strong> para formar uma tela completa.</li>
+<li><strong>Componentes</strong> (<strong>Components</strong>) são elementos mais simples e reutilizáveis que compõem partes da interface.</li>
+<li>Manter pastas separadas para páginas e componentes ajuda na escalabilidade e clareza do código.</li>
+</ul>
+<p>Ao seguir essa organização, você mantém o código mais estruturado, fácil de entender e de escalar conforme a aplicação cresce.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/python.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/html.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/css.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/javascript.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../../.."</script>
+    
+    <script src="../../../../js/base.js"></script>
+    <script src="../../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
