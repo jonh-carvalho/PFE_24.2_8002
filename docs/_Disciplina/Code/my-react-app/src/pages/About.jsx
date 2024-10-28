@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import  { useState } from 'react';
+import  { useRef } from 'react';
 
 const BotaoEstilizado = styled.button`
   
@@ -16,12 +18,33 @@ const BotaoEstilizado = styled.button`
 `;
 
 function About() {
+
+  const [contador, setContador] = useState(0);
+  const inputRef = useRef(null);
+
+  const incrementar = () => {
+    setContador(contador + 1);
+  };
+
+   const focarInput = () => {
+    inputRef.current.focus();
+  };
+
   return (
     <>
       <h1>Meu App com Styled Components</h1>
       <BotaoEstilizado>About</BotaoEstilizado>
       <h1>Meu App com Styled Components</h1>
       <BotaoEstilizado>About</BotaoEstilizado>
+
+      
+      <p>Você clicou {contador} vezes</p>
+      <button onClick={incrementar}>Clique aqui</button>
+<br /><br />
+      <input ref={inputRef} type="text" placeholder="Clique para focar" />
+      <button onClick={focarInput}>Focar no input</button>
+
+    
     </>
   );
 }
