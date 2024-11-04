@@ -377,9 +377,8 @@ functionApp() {
 * **Experiência do usuário:** Forneça feedback visual para o usuário sobre os filtros aplicados e os resultados da filtragem.
 * **Flexibilidade:** Permita que o usuário salve suas configurações de filtro para uso futuro.
 
-**Próximos Passos:**
+**Próximo Passo:**
 
-* **Filtros complexos:** Explore filtros mais complexos, como filtros fuzzy (busca aproximada) ou filtros geográficos.
 * **Integração com backend:** Se seus dados estiverem em um backend, adapte a lógica de filtragem para trabalhar com a API do seu backend.
 
 Com essa abordagem, você pode criar uma experiência de filtragem poderosa e flexível para seus usuários.
